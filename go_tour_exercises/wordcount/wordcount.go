@@ -18,6 +18,10 @@ func WordCount(s string) map[string]int {
 	for _, word := range words {
 		// Increase the count for each word in the map.
 		// The map will automatically handle new words.
+
+		// incase you want to count words ignoring the the case
+		// word := strings.ToLower(word)
+
 		result[word]++
 	}
 
